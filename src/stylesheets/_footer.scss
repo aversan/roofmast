@@ -1,0 +1,15 @@
+.footer {
+  font-size: .875rem;
+  overflow-x: hidden;
+
+  &,
+  &-row {
+    height: 120px;
+  }
+
+  &-copy {
+    color: $gray-500;
+    position: relative;
+    top: .3rem;
+  }
+}

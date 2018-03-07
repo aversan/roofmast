@@ -1,0 +1,22 @@
+{%
+set items = [
+  { iconName: 'instruction-step-1', description: 'Распакуйте несколько пачек с гибкой черепицей. Вольмите гонт в руки.' },
+  { iconName: 'instruction-step-2', description: 'Удалите защитную плёнку с морозостойкого клеевого слоя.' },
+  { iconName: 'instruction-step-3', description: 'Зафиксируйте гонт гибкой черепицы специальными кровельными гвоздями, как показано на рисунке (угол кровли от 12° до 45°). Монтаж черепицы необходимо производить, смешав гонты из 3-6 упаковок.' },
+  { iconName: 'instruction-step-4', description: 'Совместите следующий гонт черепицы с предыдущим со смещением по горизонтали, соблюдая рисунок.' },
+  { iconName: 'instruction-step-5', description: 'Продолжайте монтаж! Следите, чтобы шляпки гвоздей были закрыты последующим гонтом черепицы.' }
+]
+%}
+<section class="main-section" id="instruction">
+  <div class="container">
+    <h2 class="h1 main-section-title text-uppercase text-center">Инструкция по мантажу</h2>
+    <ul class="justify-content-around flex-nowrap main-instruction-list row list-unstyled mb-0 pt-2">
+      {% for item in items %}
+      <li class="main-instruction-item col">
+        <i class="icon icon-sprite icon-{{item.iconName}} main-instruction-item-icon"></i>
+        <div class="main-instruction-item-description mt-5 pt-1">{{item.description}}</div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

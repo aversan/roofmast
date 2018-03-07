@@ -1,0 +1,147 @@
+@mixin sprite($filename) {
+  & {
+    @if $filename == icon-close-primary {
+      height: 40px;
+      width: 40px;
+      min-width: 40px;
+    }
+    @if $filename == icon-durability {
+      height: 86px;
+      width: 76px;
+      min-width: 76px;
+    }
+    @if $filename == icon-instruction-step-1 {
+      height: 168px;
+      width: 168px;
+      min-width: 168px;
+    }
+    @if $filename == icon-instruction-step-2 {
+      height: 168px;
+      width: 168px;
+      min-width: 168px;
+    }
+    @if $filename == icon-instruction-step-3 {
+      height: 168px;
+      width: 168px;
+      min-width: 168px;
+    }
+    @if $filename == icon-instruction-step-4 {
+      height: 168px;
+      width: 168px;
+      min-width: 168px;
+    }
+    @if $filename == icon-instruction-step-5 {
+      height: 168px;
+      width: 168px;
+      min-width: 168px;
+    }
+    @if $filename == icon-plus-white {
+      height: 21px;
+      width: 21px;
+      min-width: 21px;
+    }
+    @if $filename == icon-roofmast-logo-white-xl {
+      height: 253px;
+      width: 694px;
+      min-width: 694px;
+    }
+    @if $filename == icon-simplicity {
+      height: 87px;
+      width: 75px;
+      min-width: 75px;
+    }
+    @if $filename == icon-sound-proof {
+      height: 86px;
+      width: 92px;
+      min-width: 92px;
+    }
+    @if $filename == icon-warranty-10 {
+      height: 79px;
+      width: 223px;
+      min-width: 223px;
+    }
+    @if $filename == icon-water-proof {
+      height: 87px;
+      width: 59px;
+      min-width: 59px;
+    }
+    @if $filename == icon-wind-proof {
+      height: 75px;
+      width: 94px;
+      min-width: 94px;
+    }
+  }
+
+  &::before {
+    @if $filename == icon-close-primary {
+      background-position: -485px -421px;
+      height: 40px;
+      width: 40px;
+    }
+    @if $filename == icon-durability {
+      background-position: -260px -500px;
+      height: 86px;
+      width: 76px;
+    }
+    @if $filename == icon-instruction-step-1 {
+      background-position: 0px -421px;
+      height: 168px;
+      width: 168px;
+    }
+    @if $filename == icon-instruction-step-2 {
+      background-position: 0px -253px;
+      height: 168px;
+      width: 168px;
+    }
+    @if $filename == icon-instruction-step-3 {
+      background-position: -168px -253px;
+      height: 168px;
+      width: 168px;
+    }
+    @if $filename == icon-instruction-step-4 {
+      background-position: -336px -253px;
+      height: 168px;
+      width: 168px;
+    }
+    @if $filename == icon-instruction-step-5 {
+      background-position: -504px -253px;
+      height: 168px;
+      width: 168px;
+    }
+    @if $filename == icon-plus-white {
+      background-position: -672px -253px;
+      height: 21px;
+      width: 21px;
+    }
+    @if $filename == icon-roofmast-logo-white-xl {
+      background-position: 0px 0px;
+      height: 253px;
+      width: 694px;
+    }
+    @if $filename == icon-simplicity {
+      background-position: 0px -589px;
+      height: 87px;
+      width: 75px;
+    }
+    @if $filename == icon-sound-proof {
+      background-position: -168px -500px;
+      height: 86px;
+      width: 92px;
+    }
+    @if $filename == icon-warranty-10 {
+      background-position: -168px -421px;
+      height: 79px;
+      width: 223px;
+    }
+    @if $filename == icon-water-proof {
+      background-position: -75px -589px;
+      height: 87px;
+      width: 59px;
+    }
+    @if $filename == icon-wind-proof {
+      background-position: -391px -421px;
+      height: 75px;
+      width: 94px;
+    }
+  }
+}

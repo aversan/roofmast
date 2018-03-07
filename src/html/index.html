@@ -1,0 +1,17 @@
+{% extends 'layouts/application.html' %}
+
+{% block content %}
+	{% include 'main/hero.html' %}
+  {% include 'main/warranty.html' %}
+  <div class="section-divider"></div>
+  {% include 'main/catalog.html' %}
+  <div class="section-divider"></div>
+  {% include 'main/characteristics.html' %}
+  <div class="section-divider"></div>
+  {% include 'main/hero-bottom.html' %}
+  {% include 'main/documents.html' %}
+  <div class="section-divider"></div>
+  {% include 'main/instruction.html' %}
+  <div class="section-divider"></div>
+  {% include 'main/feedback.html' %}
+{% endblock %}

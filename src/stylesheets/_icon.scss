@@ -1,0 +1,95 @@
+.icon {
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-sprite {
+  &:before {
+    content: '';
+    display: inline-block;
+    background-image: url('../images/sprite.png');
+    position: relative;
+  }
+
+  &.icon-close-primary {
+    @include sprite('icon-close-primary');
+  }
+
+  &.icon-durability {
+    @include sprite('icon-durability');
+  }
+
+  &.icon-instruction-step-1 {
+    @include sprite('icon-instruction-step-1');
+  }
+
+  &.icon-instruction-step-2 {
+    @include sprite('icon-instruction-step-2');
+  }
+
+  &.icon-instruction-step-3 {
+    @include sprite('icon-instruction-step-3');
+  }
+
+  &.icon-instruction-step-4 {
+    @include sprite('icon-instruction-step-4');
+  }
+
+  &.icon-instruction-step-5 {
+    @include sprite('icon-instruction-step-5');
+  }
+
+  &.icon-plus-white {
+    @include sprite('icon-plus-white');
+  }
+
+  &.icon-roofmast-logo-white-xl {
+    @include sprite('icon-roofmast-logo-white-xl');
+  }
+
+  &.icon-simplicity {
+    @include sprite('icon-simplicity');
+  }
+
+  &.icon-sound-proof {
+    @include sprite('icon-sound-proof');
+  }
+
+  &.icon-warranty-10 {
+    @include sprite('icon-warranty-10');
+  }
+
+  &.icon-water-proof {
+    @include sprite('icon-water-proof');
+  }
+
+  &.icon-wind-proof {
+    @include sprite('icon-wind-proof');
+  }
+
+  &.icon-instruction-step-1 {
+    @include sprite('icon-instruction-step-1');
+  }
+
+  &.icon-instruction-step-2 {
+    @include sprite('icon-instruction-step-2');
+  }
+
+  &.icon-instruction-step-3 {
+    @include sprite('icon-instruction-step-3');
+  }
+
+  &.icon-instruction-step-4 {
+    @include sprite('icon-instruction-step-4');
+  }
+
+  &.icon-instruction-step-5 {
+    @include sprite('icon-instruction-step-5');
+  }
+}

@@ -1,0 +1,114 @@
+{%
+  set features = [
+    { iconName: 'water-proof', title: 'Гидроизоляция' },
+    { iconName: 'sound-proof', title: 'Хорошее звукопоглощение' },
+    { iconName: 'durability', title: 'Долговечность' },
+    { iconName: 'simplicity', title: 'Быстрый и легкий монтаж' },
+    { iconName: 'wind-proof', title: 'Ветроустойчивость' }
+  ]
+%}
+
+{%
+  set rows1 = [
+    { name: 'Количество слоёв черепицы, шт.', value: '1' },
+    { name: 'Ширина, мм', value: '1000 ± 3,0' },
+    { name: 'Высота, мм', value: '317 ± 3,0' },
+    { name: 'Толщина', value: '2,7 ± 0,2' },
+    { name: 'Вес 1м² кровельного покрытия, кг', value: '6,8' },
+    { name: 'Основа, стеклохолст, г/м²', value: '120' },
+    { name: 'Теплостойкость, ºС, не ниже', value: '110' },
+    { name: 'Потеря посыпки, г/образец, не более', value: '1,2' }
+  ]
+%}
+
+{%
+  set rows2 = [
+    { name: 'Размер пачки (ширина / длина / высота), мм', value: '320 x 1003 x 63,8' },
+    { name: 'Вес упаковки, кг', value: '20,4' },
+    { name: 'Кол-во гонтов в упаковке, шт.', value: '22' },
+    { name: 'Кол-во упаковок на поддоне, шт.', value: '48' },
+    { name: 'Кол-во м² в упаковке, м²', value: '3,00' },
+    { name: 'Размер поддона, мм', value: '1050 x 1050' },
+    { name: 'Вес поддона (брутто), кг', value: '110' }
+  ]
+%}
+
+<section class="main-section" id="characteristics">
+  <div class="container">
+    <h2 class="h1 main-section-title text-uppercase text-center mb-0">Характеристики</h2>
+    <div class="section-divider"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper main-tech-slider">
+        <div class="swiper-slide" data-item="01-01">
+          <img src="images/main/tech-tile-01-01.png" alt="" width="826" height="336">
+        </div>
+        <div class="swiper-slide" data-item="01-02">
+          <img src="images/main/tech-tile-02-01.png" alt="" width="826" height="336">
+        </div>
+        <div class="swiper-slide" data-item="01-03">
+          <img src="images/main/tech-tile-03-01.png" alt="" width="826" height="336">
+        </div>
+      </div>
+    </div>
+    <div class="section-divider"></div>
+    <ul class="justify-content-around flex-nowrap main-features-list row list-unstyled mb-0 pb-2">
+      {% for feature in features %}
+      <li class="main-features-item col text-center">
+        <div class="main-features-item-icon d-flex align-items-end justify-content-center">
+          <i class="icon icon-sprite icon-{{feature.iconName}}"></i>
+        </div>
+        <h6 class="text-uppercase main-features-item-title mt-5 mb-0">{{feature.title}}</h6>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="section-divider"></div>
+    <h3 class="text-uppercase mb-0">Технические и логические параметры</h3>
+    <div class="main-hr my-5"></div>
+    <div class="row main-tech-row pt-2">
+      <div class="col-6 main-tech-col">
+        <table class="table mb-0 main-tech-table">
+          <colgroup>
+            <col width="auto" />
+            <col width="100px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Наименование</th>
+              <th>Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row1 in rows1 %}
+            <tr>
+              <td>{{ row1.name }}</td>
+              <td class="text-truncate">{{ row1.value }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="col-6 main-tech-col">
+        <table class="table mb-0 main-tech-table">
+          <colgroup>
+            <col width="auto" />
+            <col width="100px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Наименование</th>
+              <th>Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for row2 in rows2 %}
+            <tr>
+              <td>{{ row2.name }}</td>
+              <td class="text-truncate">{{ row2.value }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
