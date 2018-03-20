@@ -1,6 +1,5 @@
 {%
   set items = [
-    { title: "Гарантийный сертификат", imageName: 'doc-01-small.jpg', imageWidth: 232, imageHeight: 309 },
     { title: "Cертификат соответствия", imageName: 'doc-02-small.jpg', imageWidth: 220, imageHeight: 311 },
     { title: "Инструкция по монтажу", imageName: 'doc-03-small.jpg', imageWidth: 232, imageHeight: 308 }
   ]
@@ -11,6 +10,16 @@
     <div class="doc-slider-container-2 pt-3">
       <div class="swiper-container doc-slider-container js-swiper-container">
         <div class="swiper-wrapper">
+          <div class="swiper-slide doc-slider-slide d-flex flex-column text-center hoverable">
+            <h5 class="doc-slider-slide-title mt-5 pt-1 pb-1 mb-0 order-2 text-uppercase">
+              <a class="fill-area-link text-dark doc-slider-slide-link" download href="file.pdf">
+                Гарантийный сертификат
+              </a>
+            </h5>
+            <div class="doc-slider-slide-image-wrapper d-flex align-items-end justify-content-center">
+              <img class="img-fluid doc-slider-slide-image" src="images/main/doc-01-small.jpg" alt="" width="232" height="309">
+            </div>
+          </div>
           {% for item in items %}
           <div class="swiper-slide doc-slider-slide d-flex flex-column text-center hoverable">
             <h5 class="doc-slider-slide-title mt-5 pt-1 pb-1 mb-0 order-2 text-uppercase">

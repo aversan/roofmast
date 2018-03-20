@@ -1,9 +1,9 @@
 @mixin sprite($filename) {
   & {
     @if $filename == icon-close-primary {
-      height: 40px;
-      width: 40px;
-      min-width: 40px;
+      height: 42px;
+      width: 42px;
+      min-width: 42px;
     }
     @if $filename == icon-durability {
       height: 86px;
@@ -46,40 +46,40 @@
       min-width: 694px;
     }
     @if $filename == icon-simplicity {
-      height: 87px;
-      width: 75px;
-      min-width: 75px;
+      height: 89px;
+      width: 77px;
+      min-width: 77px;
     }
     @if $filename == icon-sound-proof {
-      height: 86px;
-      width: 92px;
-      min-width: 92px;
-    }
-    @if $filename == icon-warranty-10 {
-      height: 79px;
-      width: 223px;
-      min-width: 223px;
-    }
-    @if $filename == icon-water-proof {
-      height: 87px;
-      width: 59px;
-      min-width: 59px;
-    }
-    @if $filename == icon-wind-proof {
-      height: 75px;
+      height: 88px;
       width: 94px;
       min-width: 94px;
+    }
+    @if $filename == icon-warranty-10 {
+      height: 81px;
+      width: 225px;
+      min-width: 225px;
+    }
+    @if $filename == icon-water-proof {
+      height: 89px;
+      width: 61px;
+      min-width: 61px;
+    }
+    @if $filename == icon-wind-proof {
+      height: 77px;
+      width: 96px;
+      min-width: 96px;
     }
   }
 
   &::before {
     @if $filename == icon-close-primary {
-      background-position: -485px -421px;
-      height: 40px;
-      width: 40px;
+      background-position: -694px -264px;
+      height: 42px;
+      width: 42px;
     }
     @if $filename == icon-durability {
-      background-position: -260px -500px;
+      background-position: -694px -89px;
       height: 86px;
       width: 76px;
     }
@@ -109,7 +109,7 @@
       width: 168px;
     }
     @if $filename == icon-plus-white {
-      background-position: -672px -253px;
+      background-position: -736px -264px;
       height: 21px;
       width: 21px;
     }
@@ -119,29 +119,29 @@
       width: 694px;
     }
     @if $filename == icon-simplicity {
-      background-position: 0px -589px;
-      height: 87px;
-      width: 75px;
+      background-position: -694px 0px;
+      height: 89px;
+      width: 77px;
     }
     @if $filename == icon-sound-proof {
-      background-position: -168px -500px;
-      height: 86px;
-      width: 92px;
+      background-position: 0px -589px;
+      height: 88px;
+      width: 94px;
     }
     @if $filename == icon-warranty-10 {
       background-position: -168px -421px;
-      height: 79px;
-      width: 223px;
+      height: 81px;
+      width: 225px;
     }
     @if $filename == icon-water-proof {
-      background-position: -75px -589px;
-      height: 87px;
-      width: 59px;
+      background-position: -694px -175px;
+      height: 89px;
+      width: 61px;
     }
     @if $filename == icon-wind-proof {
-      background-position: -391px -421px;
-      height: 75px;
-      width: 94px;
+      background-position: -393px -421px;
+      height: 77px;
+      width: 96px;
     }
   }
 }
