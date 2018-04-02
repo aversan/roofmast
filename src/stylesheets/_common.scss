@@ -89,3 +89,12 @@ th.text-truncate,
 td.text-truncate {
   max-width: 1px;
 }
+
+.fancybox-skin {
+  padding: 0 !important;
+  box-shadow: 0 .5rem 1rem rgba($black, .5);
+}
+
+.fancybox-title {
+  text-align: center;
+}

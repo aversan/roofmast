@@ -1,0 +1,52 @@
+<section class="main-section feedback bg-pampas" id="feedback" data-module="feedback">
+  <div class="container feedback-container d-flex flex-column justify-content-center">
+    <div class="row justify-content-center no-gutters">
+      <div class="col-6">
+        <h2 class="main-section-title text-uppercase mb-5 pb-1 text-center">Задать вопрос</h2>
+        <div class="mb-2">
+          <label class="sr-only" for="">Имя</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Имя">
+        </div>
+        <div class="mb-2">
+          <label class="sr-only" for="">Телефон</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Телефон">
+        </div>
+        <div class="mb-2">
+          <label class="sr-only" for="">Эл. почта</label>
+          <input class="form-control feedback-form-control" type="text" value="" placeholder="Эл. почта">
+        </div>
+        <div class="">
+          <label class="sr-only" for="">Ваш вопрос</label>
+          <textarea class="form-control form-control-h2 js-autosize feedback-form-control" name="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        </div>
+        <div class="mt-4 row align-items-center">
+          <div class="col-6">
+            <button class="btn btn-outline-primary btn-width-medium btn-lg text-uppercase js-submit" type="submit">Отправить</button>
+          </div>
+          <div class="col-6">
+            <div class="custom-control custom-checkbox custom-control-inline typo-sm feedback-checkbox">
+              <input type="checkbox" class="custom-control-input" id="agree">
+              <label class="custom-control-label" for="agree">Согласен с <a class="text-dark underline" href="">политикой обработки персональных данных</a></label>
+            </div>
+          </div>
+        </div>
+        <div class="modal feedback-modal js-modal pr-0">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header pb-0">
+                <button type="button" class="close js-close mx-auto" aria-label="Close">
+                  <i class="icon icon-sprite icon-close-primary"></i>
+                </button>
+              </div>
+              <div class="modal-body text-center px-5 pb-5 pt-3">
+                <p class="mb-0 typo-lg">
+                  Спасибо, ваш вопрос принят!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
