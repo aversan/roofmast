@@ -47,7 +47,7 @@ $(() => {
         const $dropwrap = $(this);
         const theme = $dropwrap.data('theme');
         const position = $dropwrap.data('position');
-        const openOn = $dropwrap.data('open-on') || 'click';
+        const openOn = $dropwrap.data('open-on') || '';
         const $target = $dropwrap.find('.drop-target');
         $target.addClass(theme);
         const content = $dropwrap.find('.drop-content').html();
@@ -63,6 +63,8 @@ $(() => {
           hoverOpenDelay: 1000,
           // remove: true
         });
+
+        $(this)[0].drop = drop;
 
         return drop;
       });
